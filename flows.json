@@ -1,0 +1,1114 @@
+[
+    {
+        "id": "ccc74c6b12c1e477",
+        "type": "tab",
+        "label": "dashboard-demo MQTT",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "ee537aff8404c0d5",
+        "type": "mqtt-broker",
+        "name": "My Mosquitto",
+        "broker": "localhost",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "07523e432fb59131",
+        "type": "ui_tab",
+        "name": "Smart Bathtub",
+        "icon": "dashboard",
+        "order": 2,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "93f99fd0557b7bc8",
+        "type": "ui_group",
+        "name": "Sensores 1",
+        "tab": "07523e432fb59131",
+        "order": 3,
+        "disp": true,
+        "width": "5",
+        "collapse": true,
+        "className": ""
+    },
+    {
+        "id": "31b851528ece6c09",
+        "type": "ui_group",
+        "name": "Control Manual",
+        "tab": "07523e432fb59131",
+        "order": 1,
+        "disp": true,
+        "width": "3",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "7ac6e51037bbf247",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-custom",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#1aea3d",
+                "baseFont": "Century Gothic,CenturyGothic,AppleGothic,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#32ef2e",
+                "baseFont": "Century Gothic,CenturyGothic,AppleGothic,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#ffffff",
+                "baseFont": "Lucida Sans Typewriter,Lucida Console,Monaco,monospace",
+                "reset": false
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#4B7930",
+                    "value": "#ffffff",
+                    "edited": true
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#3ad70f",
+                    "edited": true
+                },
+                "page-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": true
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#0d0d0d",
+                    "edited": true
+                },
+                "group-textColor": {
+                    "value": "#0d0c0c",
+                    "edited": true
+                },
+                "group-borderColor": {
+                    "value": "#ffffff",
+                    "edited": true
+                },
+                "group-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": true
+                },
+                "widget-textColor": {
+                    "value": "#141414",
+                    "edited": true
+                },
+                "widget-backgroundColor": {
+                    "value": "#3ad70f",
+                    "edited": true
+                },
+                "widget-borderColor": {
+                    "value": "#ffffff",
+                    "edited": true
+                },
+                "base-font": {
+                    "value": "Lucida Sans Typewriter,Lucida Console,Monaco,monospace"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey",
+                "palette": "light"
+            }
+        },
+        "site": {
+            "name": "Node-RED Dashboard",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 52,
+                "sy": 52,
+                "gx": 2,
+                "gy": 2,
+                "cx": 4,
+                "cy": 4,
+                "px": 4,
+                "py": 4
+            }
+        }
+    },
+    {
+        "id": "829ff3447cd6c68c",
+        "type": "websocket-client",
+        "path": "ws://localhost:8484",
+        "tls": "",
+        "wholemsg": "false",
+        "hb": "0",
+        "subprotocol": "",
+        "headers": []
+    },
+    {
+        "id": "e107d031d2f63319",
+        "type": "sqlitedb",
+        "db": "bañera.db",
+        "mode": "RWC"
+    },
+    {
+        "id": "d3ba15328e847a11",
+        "type": "ui-base",
+        "name": "My Dashboard",
+        "path": "/dashboard",
+        "appIcon": "",
+        "includeClientData": true,
+        "acceptsClientConfig": [
+            "ui-notification",
+            "ui-control"
+        ],
+        "showPathInSidebar": false,
+        "headerContent": "page",
+        "navigationStyle": "default",
+        "titleBarStyle": "default",
+        "showReconnectNotification": true,
+        "notificationDisplayTime": 1,
+        "showDisconnectNotification": true,
+        "allowInstall": false
+    },
+    {
+        "id": "db1b741ce0ad81a2",
+        "type": "ui-theme",
+        "name": "Default Theme",
+        "colors": {
+            "surface": "#ffffff",
+            "primary": "#0094CE",
+            "bgPage": "#eeeeee",
+            "groupBg": "#ffffff",
+            "groupOutline": "#cccccc"
+        },
+        "sizes": {
+            "density": "default",
+            "pagePadding": "12px",
+            "groupGap": "12px",
+            "groupBorderRadius": "4px",
+            "widgetGap": "12px"
+        }
+    },
+    {
+        "id": "b79aa85c7d086af5",
+        "type": "ui_group",
+        "name": "Reporte",
+        "tab": "07523e432fb59131",
+        "order": 2,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "327d54f89d1d10b4",
+        "type": "sqlitedb",
+        "db": "casa.db",
+        "mode": "RWC"
+    },
+    {
+        "id": "cb4d5998ba74a535",
+        "type": "ui_group",
+        "name": "Sensores 2",
+        "tab": "07523e432fb59131",
+        "order": 4,
+        "disp": true,
+        "width": "5",
+        "collapse": true,
+        "className": ""
+    },
+    {
+        "id": "aa54799384c6ab97",
+        "type": "sqlitedb",
+        "db": "C:\\Users\\bflores\\casa.db",
+        "mode": "RWC"
+    },
+    {
+        "id": "47d0d33975c5db10",
+        "type": "sqlitedb",
+        "db": "C:/Users/bflores/casa.db",
+        "mode": "RWC"
+    },
+    {
+        "id": "e2afd8513110a521",
+        "type": "mqtt in",
+        "z": "ccc74c6b12c1e477",
+        "name": "suscribe sensors",
+        "topic": "smartBathtub/sensors/#",
+        "qos": "2",
+        "datatype": "utf8",
+        "broker": "ee537aff8404c0d5",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 220,
+        "y": 20,
+        "wires": [
+            [
+                "ca44f02217b7ba0c",
+                "6697997fe771ea91",
+                "595d33ef181b69e1"
+            ]
+        ]
+    },
+    {
+        "id": "ca44f02217b7ba0c",
+        "type": "function",
+        "z": "ccc74c6b12c1e477",
+        "name": "Select topic",
+        "func": "// Validamos que el mensaje traiga un tópico\nif (!msg.topic) return null;\n\n// IMPORTANTE: Todas las salidas deben tener 6 posiciones [1,2,3,4,5,6]\nif (msg.topic.includes(\"door\")) {\n    return [msg, null, null, null, null, null]; // Salida 1\n} else if (msg.topic.includes(\"light\")) {\n    return [null, msg, null, null, null, null]; // Salida 2\n} else if (msg.topic.includes(\"temperature\")) {\n    return [null, null, msg, null, null, null]; // Salida 3\n} else if (msg.topic.includes(\"presencia\")) {\n    return [null, null, null, msg, null, null]; // Salida 4\n} else if (msg.topic.includes(\"volume\")) {\n    return [null, null, null, null, msg, null]; // Salida 5\n} else if (msg.topic.includes(\"caidaJabon\")) {\n    return [null, null, null, null, null, msg]; // Salida 6 -> ¡ESTA ES LA TUYA!\n}\n\nreturn null;",
+        "outputs": 6,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 450,
+        "y": 100,
+        "wires": [
+            [
+                "c3710325c0aec26a"
+            ],
+            [
+                "839a9b2c774ac823"
+            ],
+            [
+                "0477bf4615caab53",
+                "339b6176ad2127b9"
+            ],
+            [
+                "b83b7d510ad04f3d",
+                "9ca98dae1a680543"
+            ],
+            [
+                "87a3a2f813665b68",
+                "7459a568fbca01a2"
+            ],
+            [
+                "787948a351167f68"
+            ]
+        ]
+    },
+    {
+        "id": "e1ae060eec04bceb",
+        "type": "debug",
+        "z": "ccc74c6b12c1e477",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1150,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "94852588bef7f08b",
+        "type": "comment",
+        "z": "ccc74c6b12c1e477",
+        "name": "",
+        "info": "Página de iconos\n\nhttps://www.w3schools.com/icons/google_icons_communication.asp",
+        "x": 400,
+        "y": 740,
+        "wires": []
+    },
+    {
+        "id": "6697997fe771ea91",
+        "type": "debug",
+        "z": "ccc74c6b12c1e477",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 430,
+        "y": 20,
+        "wires": []
+    },
+    {
+        "id": "d4db80b230c67ea6",
+        "type": "ui_button",
+        "z": "ccc74c6b12c1e477",
+        "name": "Main Door Open",
+        "group": "31b851528ece6c09",
+        "order": 8,
+        "width": "3",
+        "height": "2",
+        "passthru": false,
+        "label": "Open Door",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "touch_app",
+        "payload": "true",
+        "payloadType": "bool",
+        "topic": "",
+        "topicType": "str",
+        "x": 1320,
+        "y": 300,
+        "wires": [
+            [
+                "3fd5f72a5f514562"
+            ]
+        ]
+    },
+    {
+        "id": "7fead88b4e2cc0a0",
+        "type": "ui_button",
+        "z": "ccc74c6b12c1e477",
+        "name": "Main Door Closed",
+        "group": "31b851528ece6c09",
+        "order": 9,
+        "width": "3",
+        "height": "2",
+        "passthru": false,
+        "label": "Close Door",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "mi-videogame_asset_off",
+        "payload": "false",
+        "payloadType": "bool",
+        "topic": "",
+        "topicType": "str",
+        "x": 1310,
+        "y": 340,
+        "wires": [
+            [
+                "3fd5f72a5f514562"
+            ]
+        ]
+    },
+    {
+        "id": "022f6fcb4f5d6729",
+        "type": "ui_switch",
+        "z": "ccc74c6b12c1e477",
+        "name": "light switch",
+        "label": " Apagar  / Encender  Luz",
+        "tooltip": "",
+        "group": "31b851528ece6c09",
+        "order": 7,
+        "width": "3",
+        "height": "2",
+        "passthru": false,
+        "decouple": "false",
+        "topic": "smartBathtub/actuators",
+        "topicType": "str",
+        "style": "",
+        "onvalue": "{\"light\": true}",
+        "onvalueType": "json",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "{\"light\": false}",
+        "offvalueType": "json",
+        "officon": "",
+        "offcolor": "",
+        "animate": true,
+        "className": "",
+        "x": 970,
+        "y": 220,
+        "wires": [
+            [
+                "e1ae060eec04bceb",
+                "04464f09f6be8fe9",
+                "eda461bffed82f7b"
+            ]
+        ]
+    },
+    {
+        "id": "595d33ef181b69e1",
+        "type": "http request",
+        "z": "ccc74c6b12c1e477",
+        "name": "Actualiza Sensor Ambiente",
+        "method": "POST",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "http://127.0.0.1:8484/smartBathtub/ambient",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 180,
+        "y": 120,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "04464f09f6be8fe9",
+        "type": "function",
+        "z": "ccc74c6b12c1e477",
+        "name": "function 1",
+        "func": "msg.payload = { \"light\": msg.payload };\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1160,
+        "y": 200,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "3fd5f72a5f514562",
+        "type": "function",
+        "z": "ccc74c6b12c1e477",
+        "name": "function 2",
+        "func": "msg.payload = {\n    \"door\": msg.payload\n};\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1500,
+        "y": 320,
+        "wires": [
+            [
+                "eda461bffed82f7b"
+            ]
+        ]
+    },
+    {
+        "id": "b83b7d510ad04f3d",
+        "type": "function",
+        "z": "ccc74c6b12c1e477",
+        "name": "function 3",
+        "func": "// 1. Recuperamos la memoria\nlet puerta = context.get('puerta') || \"CERRADA\";\nlet presencia = context.get('presencia') || \"0\";\n\n// 2. Normalizamos la entrada (De texto a valor útil)\nlet datoRecibido = msg.payload.toString().trim();\n\nif (msg.topic && msg.topic.includes(\"puerta\")) {\n    puerta = (datoRecibido === \"ABIERTA\") ? \"ABIERTA\" : \"CERRADA\";\n    context.set('puerta', puerta);\n} \n\nif (msg.topic && msg.topic.includes(\"presencia\")) {\n    // Si llega \"1\", \"true\" o \"Detectado\", lo guardamos como \"1\"\n    presencia = (datoRecibido === \"1\" || datoRecibido === \"Detectado\" || datoRecibido === \"true\") ? \"1\" : \"0\";\n    context.set('presencia', presencia);\n}\n\n// 3. Lógica de Seguridad (Reforzada)\nlet luz = (presencia === \"1\" || puerta === \"ABIERTA\");\nlet alertaMsg = (presencia === \"1\") ? \"Presencia en Bañera\" : \"Bañera vacía\";\n\n// 4. Salidas\nreturn [\n    { payload: alertaMsg }, \n    { payload: luz }, // Esto enviará un booleano real al switch\n    { payload: puerta }\n];",
+        "outputs": 3,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 740,
+        "y": 220,
+        "wires": [
+            [
+                "512f7c06273b029c"
+            ],
+            [
+                "022f6fcb4f5d6729"
+            ],
+            [
+                "022f6fcb4f5d6729"
+            ]
+        ]
+    },
+    {
+        "id": "512f7c06273b029c",
+        "type": "ui_toast",
+        "z": "ccc74c6b12c1e477",
+        "position": "top right",
+        "displayTime": "3",
+        "highlight": "",
+        "sendall": true,
+        "outputs": 0,
+        "ok": "OK",
+        "cancel": "",
+        "raw": false,
+        "className": "",
+        "topic": "",
+        "name": "",
+        "x": 990,
+        "y": 180,
+        "wires": []
+    },
+    {
+        "id": "9ca98dae1a680543",
+        "type": "ui_template",
+        "z": "ccc74c6b12c1e477",
+        "group": "cb4d5998ba74a535",
+        "name": "Presencia",
+        "order": 0,
+        "width": "6",
+        "height": "3",
+        "format": "<style>\n    .nr-dashboard-template { padding: 0 !important; margin: 0 !important; overflow: visible !important; }\n    .card-marco {\n        position: absolute; top: 6px; left: 6px; right: 6px; bottom: 6px;\n        background-color: white; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);\n        display: flex; align-items: center; padding: 15px; transition: all 0.5s ease;\n    }\n    @keyframes pulse_presence {\n        0% { transform: scale(1); opacity: 1; }\n        50% { transform: scale(1.1); opacity: 0.7; }\n        100% { transform: scale(1); opacity: 1; }\n    }\n</style>\n<div class=\"card-marco\" ng-style=\"{'background-color': (msg.payload == 1) ? '#f0f9ff' : 'white'}\">\n    <div style=\"flex: 1; text-align: center;\">\n        <i ng-if=\"msg.payload == 1\" class=\"fa fa-user fa-3x\" style=\"color: #2980b9; animation: pulse_presence 2s infinite;\"></i>\n        <i ng-if=\"msg.payload == 0\" class=\"fa fa-user-times fa-3x\" style=\"color: #bdc3c7;\"></i>\n    </div>\n    <div style=\"flex: 2; padding-left: 15px; border-left: 1px solid #eee; display: flex; flex-direction: column; justify-content: center;\">\n        <div style=\"font-size: 0.85em; color: #e74c3c; font-weight: bold; text-transform: uppercase;\">Presencia</div>\n        <div style=\"font-size: 1.6em; font-weight: bold; color: #333;\">\n            {{ (msg.payload == 1) ? 'Detectado' : 'Zona Vacía' }}\n        </div>\n    </div>\n</div>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 740,
+        "y": 280,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "0477bf4615caab53",
+        "type": "ui_template",
+        "z": "ccc74c6b12c1e477",
+        "group": "93f99fd0557b7bc8",
+        "name": "Temperatura",
+        "order": 3,
+        "width": "6",
+        "height": "3",
+        "format": "<style>\n    .nr-dashboard-template { padding: 0 !important; margin: 0 !important; overflow: visible !important; }\n    .card-marco {\n        position: absolute; top: 6px; left: 6px; right: 6px; bottom: 6px;\n        background-color: white; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);\n        display: flex; align-items: center; padding: 15px;\n    }\n</style>\n<div class=\"card-marco\">\n    <div style=\"flex: 1; text-align: center;\">\n        <i class=\"fa fa-thermometer-half fa-3x\" style=\"color: #ff9800;\"></i>\n    </div>\n    <div style=\"flex: 2; padding-left: 15px; border-left: 1px solid #eee; display: flex; flex-direction: column; justify-content: center;\">\n        <div style=\"font-size: 1em; color: #666; font-weight: bold;\">Temperatura</div>\n        <div style=\"font-size: 2.2em; font-weight: bold; color: #333;\">\n            {{msg.payload}} <span style=\"font-size: 0.6em;\">°C</span>\n        </div>\n    </div>\n</div>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 750,
+        "y": 100,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "c3710325c0aec26a",
+        "type": "ui_template",
+        "z": "ccc74c6b12c1e477",
+        "group": "93f99fd0557b7bc8",
+        "name": "Puerta",
+        "order": 4,
+        "width": "6",
+        "height": "3",
+        "format": "<style>\n    .nr-dashboard-template { padding: 0 !important; margin: 0 !important; overflow: visible !important; }\n    .card-marco {\n        position: absolute; top: 6px; left: 6px; right: 6px; bottom: 6px;\n        background-color: white; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);\n        display: flex; align-items: center; padding: 15px; transition: all 0.5s ease;\n    }\n</style>\n<div class=\"card-marco\">\n    <div style=\"flex: 1; text-align: center; font-size: 3em;\">\n        {{(msg.payload === 'true' || msg.payload === 'ABIERTA') ? '🛀' : '▒'}}\n    </div>\n    <div style=\"flex: 2; padding-left: 15px; border-left: 1px solid #eee; display: flex; flex-direction: column; justify-content: center;\">\n        <div style=\"font-size: 1em; color: #666; font-weight: bold;\">Puerta de Cristal</div>\n        <div style=\"font-size: 2em; font-weight: bold;\" ng-style=\"{'color': (msg.payload === 'true' || msg.payload === 'ABIERTA') ? '#e74c3c' : '#95a5a6'}\">\n            {{(msg.payload === 'true' || msg.payload === 'ABIERTA') ? 'ABIERTA' : 'CERRADA'}}\n        </div>\n    </div>\n</div>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 730,
+        "y": 20,
+        "wires": [
+            [
+                "2f555d892def52be"
+            ]
+        ]
+    },
+    {
+        "id": "839a9b2c774ac823",
+        "type": "ui_template",
+        "z": "ccc74c6b12c1e477",
+        "group": "93f99fd0557b7bc8",
+        "name": "Iluminacion",
+        "order": 1,
+        "width": "6",
+        "height": "3",
+        "format": "<style>\n    /* 1. Reset para que Node-RED no interfiera con nuestros márgenes */\n    .nr-dashboard-template {\n        padding: 0 !important;\n        margin: 0 !important;\n        overflow: visible !important; \n    }\n\n    /* 2. Contenedor con MARGEN para crear el efecto de cuadro/marco */\n    .card-marco {\n        position: absolute;\n        /* El secreto: no usar 0, sino dejar unos pixeles de espacio */\n        top: 6px; \n        left: 6px; \n        right: 6px; \n        bottom: 6px; \n        \n        background-color: white;\n        border-radius: 8px; /* Bordes redondeados */\n        box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Sombra que define el marco */\n        display: flex;\n        align-items: center;\n        padding: 15px;\n        transition: all 0.5s ease;\n        overflow: hidden;\n    }\n</style>\n\n<div class=\"card-marco\">\n    <div style=\"flex: 1; text-align: center;\">\n        <i class=\"fa fa-lightbulb-o fa-3x\"\n           ng-style=\"{'color': (msg.payload === 'ON' || msg.payload === true || msg.payload === 'true') ? '#FFD700' : '#444', \n                      'text-shadow': (msg.payload === 'ON' || msg.payload === true || msg.payload === 'true') ? '0 0 15px rgba(255, 215, 0, 0.5)' : 'none'}\">\n        </i>\n    </div>\n\n    <div style=\"flex: 2; padding-left: 15px; border-left: 1px solid #eee; display: flex; flex-direction: column; justify-content: center;\">\n        <div style=\"font-size: 1.1em; color: #666; font-weight: bold; margin-bottom: 2px;\">\n            Iluminación\n        </div>\n\n        <div style=\"font-size: 2.2em; font-weight: bold; line-height: 1.1;\"\n            ng-style=\"{'color': (msg.payload === 'ON' || msg.payload === true || msg.payload === 'true') ? '#28a745' : '#FF0000'}\">\n            {{(msg.payload === 'ON' || msg.payload === true || msg.payload === 'true') ? 'Encendida' : 'Apagada'}}\n        </div>\n    </div>\n</div>",
+        "storeOutMessages": true,
+        "fwdInMessages": false,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 750,
+        "y": 60,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "e7a87fa2e5fedaa3",
+        "type": "function",
+        "z": "ccc74c6b12c1e477",
+        "name": "function 4",
+        "func": "// Extraemos solo el número de la temperatura del objeto de clima\nlet tempRecibida = msg.payload.tempc; \n\nmsg.payload = {\n    temperature: tempRecibida\n};\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 300,
+        "y": 200,
+        "wires": [
+            [
+                "595d33ef181b69e1"
+            ]
+        ]
+    },
+    {
+        "id": "840a3edb76ee7e47",
+        "type": "inject",
+        "z": "ccc74c6b12c1e477",
+        "name": "ambiente",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "30",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 130,
+        "y": 260,
+        "wires": [
+            [
+                "434839f5b0b46b7e"
+            ]
+        ]
+    },
+    {
+        "id": "434839f5b0b46b7e",
+        "type": "openweathermap",
+        "z": "ccc74c6b12c1e477",
+        "name": "Sensor ambiente",
+        "wtype": "current",
+        "lon": "",
+        "lat": "",
+        "city": "Puerto Real",
+        "country": "ES",
+        "language": "en",
+        "x": 130,
+        "y": 200,
+        "wires": [
+            [
+                "e7a87fa2e5fedaa3"
+            ]
+        ]
+    },
+    {
+        "id": "87a3a2f813665b68",
+        "type": "ui_template",
+        "z": "ccc74c6b12c1e477",
+        "group": "cb4d5998ba74a535",
+        "name": "Agua",
+        "order": 6,
+        "width": "6",
+        "height": "3",
+        "format": "<style>\n    .nr-dashboard-template { padding: 0 !important; margin: 0 !important; overflow: visible !important; }\n    .card-marco {\n        position: absolute; top: 6px; left: 6px; right: 6px; bottom: 6px;\n        background-color: white; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);\n        display: flex; align-items: center; padding: 15px; overflow: hidden;\n    }\n    @keyframes drop_water {\n        0% { transform: translateY(-10px); opacity: 0; }\n        50% { opacity: 1; }\n        100% { transform: translateY(15px); opacity: 0; }\n    }\n</style>\n<div class=\"card-marco\">\n    <div style=\"flex: 1; text-align: center; position: relative; height: 100%; display: flex; justify-content: center; align-items: center;\">\n        <i class=\"fa fa-tint fa-2x\" style=\"color: #3498db; position: absolute; margin-left: -15px; animation: drop_water 1.5s infinite ease-in;\"></i>\n        <i class=\"fa fa-tint fa-lg\" style=\"color: #85c1e9; position: absolute; margin-left: 10px; animation: drop_water 2s infinite ease-in 0.5s;\"></i>\n    </div>\n    <div style=\"flex: 2; padding-left: 15px; border-left: 1px solid #eee; display: flex; flex-direction: column; justify-content: center;\">\n        <div style=\"font-size: 1em; color: #666; font-weight: bold;\">Volumen de Agua</div>\n        <div style=\"font-size: 2em; font-weight: bold; line-height: 1.1;\"\n            ng-style=\"{'color': (msg.payload.toString().includes('100')) ? '#e74c3c' : '#1a5276'}\">\n            {{msg.payload}}\n        </div>\n    </div>\n</div>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 730,
+        "y": 320,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "1aeeb15ebcd02a34",
+        "type": "websocket in",
+        "z": "ccc74c6b12c1e477",
+        "name": "",
+        "server": "",
+        "client": "829ff3447cd6c68c",
+        "x": 260,
+        "y": 640,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "eda461bffed82f7b",
+        "type": "http request",
+        "z": "ccc74c6b12c1e477",
+        "name": "Enviar a API REST",
+        "method": "POST",
+        "ret": "obj",
+        "paytoqs": "ignore",
+        "url": "http://localhost:8484/smartBathtub/actuators",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [
+            {
+                "keyType": "Content-Type",
+                "keyValue": "",
+                "valueType": "application/json",
+                "valueValue": ""
+            }
+        ],
+        "x": 1450,
+        "y": 220,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "fa404bba500e7094",
+        "type": "inject",
+        "z": "ccc74c6b12c1e477",
+        "name": "crea tabla",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "CREATE TABLE volume (id INTEGER PRIMARY KEY AUTOINCREMENT, volume REAL, fecha TEXT);",
+        "payload": "",
+        "payloadType": "date",
+        "x": 860,
+        "y": 420,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "7442744eba374402",
+        "type": "sqlite",
+        "z": "ccc74c6b12c1e477",
+        "mydb": "47d0d33975c5db10",
+        "sqlquery": "msg.topic",
+        "sql": "",
+        "name": "sqlite 2",
+        "x": 840,
+        "y": 480,
+        "wires": [
+            [
+                "8dfda8426d87bc0b"
+            ]
+        ]
+    },
+    {
+        "id": "339b6176ad2127b9",
+        "type": "function",
+        "z": "ccc74c6b12c1e477",
+        "name": "function 6",
+        "func": "// Si la base de datos devuelve algo, lo pasamos. \n// Si viene vacía, mandamos un aviso al debug.\n//if (msg.payload.length === 0) {\n// La base de datos devuelve una lista en msg.payload\n// Si el mensaje es una lista (viene de la base de datos)\nif (Array.isArray(msg.payload)) {\n    msg.payload.forEach(function(fila) {\n        node.send({\n            topic: fila.color,\n            payload: fila.valor,\n            timestamp: new Date(fila.fecha).getTime()\n        });\n    });\n} \n// Si el mensaje es un número suelto (tiempo real)\nelse {\n    return {\n        topic: \"Bañera\",\n        payload: parseFloat(msg.payload),\n        timestamp: new Date().getTime()\n    };\n}\nreturn null;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 740,
+        "y": 160,
+        "wires": [
+            [
+                "3d98ead66ce571ae"
+            ]
+        ]
+    },
+    {
+        "id": "90c8221b121f8361",
+        "type": "inject",
+        "z": "ccc74c6b12c1e477",
+        "name": "datos",
+        "props": [
+            {
+                "p": "topic",
+                "vt": "str"
+            },
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "SELECT * FROM volume ORDER BY id DESC LIMIT 10",
+        "payload": "",
+        "payloadType": "date",
+        "x": 670,
+        "y": 480,
+        "wires": [
+            [
+                "7442744eba374402"
+            ]
+        ]
+    },
+    {
+        "id": "7459a568fbca01a2",
+        "type": "function",
+        "z": "ccc74c6b12c1e477",
+        "name": "function 5",
+        "func": "let entrada = msg.payload;\n\nlet limpio = String(entrada).replace(/[^\\d.-]/g, '').trim();\nlet valorFinal = parseFloat(limpio);\n\nif (isNaN(valorFinal) || valorFinal <= 0) return null;\n\n// 🔥 evitar repetir el mismo valor\nlet ultimo = flow.get(\"ultimo\") || null;\n\nif (valorFinal === ultimo) {\n    return null; // no enviar duplicados\n}\n\nflow.set(\"ultimo\", valorFinal);\n\nmsg.params = [valorFinal];\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 740,
+        "y": 360,
+        "wires": [
+            [
+                "dc2799ef10ad66ac"
+            ]
+        ]
+    },
+    {
+        "id": "dc2799ef10ad66ac",
+        "type": "sqlite",
+        "z": "ccc74c6b12c1e477",
+        "mydb": "47d0d33975c5db10",
+        "sqlquery": "prepared",
+        "sql": "INSERT INTO volume (volume, fecha)\nVALUES (?, datetime('now','localtime'))",
+        "name": "sqlite guardar",
+        "x": 1040,
+        "y": 340,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "787948a351167f68",
+        "type": "ui_template",
+        "z": "ccc74c6b12c1e477",
+        "group": "cb4d5998ba74a535",
+        "name": "jabon",
+        "order": 6,
+        "width": "6",
+        "height": "3",
+        "format": "<style>\n    .nr-dashboard-template { padding: 0 !important; margin: 0 !important; overflow: visible !important; }\n    .card-marco {\n        position: absolute; top: 6px; left: 6px; right: 6px; bottom: 6px;\n        background-color: white; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);\n        display: flex; align-items: center; padding: 15px; overflow: hidden;\n        border-left: 6px solid {{ (msg.payload == 1) ? '#ff0055' : '#bdc3c7' }};\n    }\n    @keyframes soap_drop {\n        0% { transform: translateY(-30px) scale(0.8); opacity: 0; }\n        50% { opacity: 1; }\n        100% { transform: translateY(40px) scale(1.1); opacity: 0; }\n    }\n</style>\n<div class=\"card-marco\" ng-style=\"{'background-color': (msg.payload == 1) ? '#f8f9ff' : 'white'}\">\n    <div style=\"flex: 1; text-align: center; display: flex; justify-content: center; align-items: center;\">\n        <i ng-if=\"msg.payload == 1\" class=\"fa fa-circle\" style=\"font-size: 2.5em; color: #ff0055; animation: soap_drop 1.5s infinite linear;\"></i>\n        <i ng-if=\"msg.payload != 1\" class=\"fa fa-circle-thin\" style=\"font-size: 2.5em; color: #eee;\"></i>\n    </div>\n    <div style=\"flex: 2; padding-left: 15px; display: flex; flex-direction: column; justify-content: center;\">\n        <div style=\"font-size: 0.9em; color: #7f8c8d; font-weight: bold; text-transform: uppercase;\">Dispensador</div>\n        <div style=\"font-size: 1.5em; font-weight: 900;\" ng-style=\"{'color': (msg.payload == 1) ? '#2c3e50' : '#bdc3c7'}\">\n            {{(msg.payload == 1) ? 'JABÓN CAYENDO' : 'EN ESPERA'}}\n        </div>\n    </div>\n</div>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 730,
+        "y": 400,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "8dfda8426d87bc0b",
+        "type": "function",
+        "z": "ccc74c6b12c1e477",
+        "name": "function 7",
+        "func": "let filas = msg.payload;\n\nlet datos = [];\n\nif (Array.isArray(filas)) {\n    filas.forEach(f => {\n        let v = Number(f.volume);\n        if (!isNaN(v) && v !== null) {\n            datos.push(v);\n        }\n    });\n}\n\n// 🔥 formato correcto para chart\nmsg.payload = [{\n    series: [\"Volumen Agua\"],\n    data: [datos],\n    labels: datos.map(() => \"\")\n}];\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1020,
+        "y": 480,
+        "wires": [
+            [
+                "2c29bc2e216c2e50",
+                "b7eff50ee59b3729"
+            ]
+        ]
+    },
+    {
+        "id": "3d98ead66ce571ae",
+        "type": "ui_gauge",
+        "z": "ccc74c6b12c1e477",
+        "name": "",
+        "group": "b79aa85c7d086af5",
+        "order": 2,
+        "width": "6",
+        "height": "3",
+        "gtype": "gage",
+        "title": "Temperatura",
+        "label": "units",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "45",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "28",
+        "seg2": "36",
+        "diff": false,
+        "className": "",
+        "x": 970,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "f4b2b78e5a632d40",
+        "type": "ui_chart",
+        "z": "ccc74c6b12c1e477",
+        "name": "",
+        "group": "b79aa85c7d086af5",
+        "order": 3,
+        "width": "6",
+        "height": "3",
+        "label": "Puerta",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "step",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#6e1111",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 1090,
+        "y": 20,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "2f555d892def52be",
+        "type": "function",
+        "z": "ccc74c6b12c1e477",
+        "name": "function 8",
+        "func": "// Manejo de DATOS HISTÓRICOS\nif (Array.isArray(msg.payload)) {\n    msg.payload.forEach(function(fila) {\n        node.send({\n            topic: \"Puerta\",\n            // Forzamos 1 para abierta, 0 para cerrada\n            payload: (fila.valor === 'ABIERTA' || fila.valor === 'true') ? 1 : 0,\n            timestamp: new Date(fila.fecha).getTime()\n        });\n    });\n} \n// Manejo de TIEMPO REAL\nelse {\n    let valor = (msg.payload === 'ABIERTA' || msg.payload === 'true' || msg.payload === true) ? 1 : 0;\n    return {\n        topic: \"Puerta\",\n        payload: valor,\n        timestamp: new Date().getTime()\n    };\n}\nreturn null;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 920,
+        "y": 20,
+        "wires": [
+            [
+                "f4b2b78e5a632d40"
+            ]
+        ]
+    },
+    {
+        "id": "2c29bc2e216c2e50",
+        "type": "ui_chart",
+        "z": "ccc74c6b12c1e477",
+        "name": "",
+        "group": "b79aa85c7d086af5",
+        "order": 1,
+        "width": "6",
+        "height": "3",
+        "label": "Volumen Agua",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "0",
+        "ymax": "100",
+        "removeOlder": "1",
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": true,
+        "useUTC": false,
+        "colors": [
+            "#5dbbfd",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 1280,
+        "y": 480,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "b7eff50ee59b3729",
+        "type": "debug",
+        "z": "ccc74c6b12c1e477",
+        "name": "debug 1",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1080,
+        "y": 540,
+        "wires": []
+    },
+    {
+        "id": "532e0fdf2babbaed",
+        "type": "global-config",
+        "env": [],
+        "modules": {
+            "node-red-dashboard": "3.6.6",
+            "node-red-node-sqlite": "2.0.0",
+            "@flowfuse/node-red-dashboard": "1.30.2",
+            "node-red-node-openweathermap": "1.0.1"
+        }
+    }
+]
