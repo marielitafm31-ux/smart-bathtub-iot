@@ -40,3 +40,11 @@ Este repositorio contiene el código y los flujos utilizados como **material de 
 ## Nota
 Este proyecto tiene fines **académicos**.  
 El código se proporciona para su revisión y análisis en el contexto del curso.
+Respecto a los archivos; sensorvalues.js y Resources.js debe estar en la carpeta resources y el archivo wot-server.js debe estar fuera pero en la carpeta BañeraIoT que contiene a la carpeta resources.
+
+BañeraIoT/
+├── wot-server.js
+└── resources/
+    ├── sensorvalues.js
+    └── Resources.js
+
