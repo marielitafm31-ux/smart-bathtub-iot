@@ -1,0 +1,67 @@
+{
+  "smartBathtub": {
+    "name": "Bañera Inteligente ESI",
+    "description": "Sistema de control de baño automatizado para Smart City",
+    "port": 8484,
+    "sensors": {
+      "temperature": {
+        "name": "Sensor de Temperatura",
+        "description": "Mide la temperatura del agua en tiempo real",
+        "unit": "°C",
+        "value": 37
+      },
+      "volume": {
+        "name": "Nivel de Agua",
+        "description": "Volumen de agua actual en la bañera",
+        "unit": "Litros",
+        "value": 0
+      },
+      "soap": {
+        "name": "Nivel de Jabón",
+        "description": "Porcentaje de jabón líquido restante",
+        "unit": "%",
+        "value": 100
+      },
+      "presencia": {
+        "name": "Detector de Presencia",
+        "description": "Indica si hay alguien dentro de la bañera",
+        "unit": "boolean",
+        "value": 0
+      },
+      "ambientTemperature": {
+        "name": "Temperatura Puerto Real",
+        "description": "Clima exterior obtenido de OpenWeather",
+        "unit": "°C",
+        "value": 20
+      },
+      "caidaJabon": {
+        "name": "Estado de Animación",
+        "description": "Controla si la bola arcoíris cae en el Dashboard",
+        "unit": "boolean",
+        "value": 0
+      }
+    },
+    "actuators": {
+      "tap": {
+        "name": "Grifo de llenado",
+        "description": "Abre o cierra el paso de agua",
+        "value": false
+      },
+      "heater": {
+        "name": "Calentador",
+        "description": "Mantiene o sube la temperatura del agua",
+        "value": false
+      },
+      "light": {
+        "name": "Luces LED",
+        "description": "Iluminación de la bañera (on/off)",
+        "value": false
+      },
+      "door": {
+        "name": "Puerta Principal",
+        "description": "Acceso al baño",
+        "value": false
+      }
+    }
+  }
+}
